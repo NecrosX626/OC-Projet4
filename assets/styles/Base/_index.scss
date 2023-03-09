@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    align-items: center;
+    // box-shadow:
+    h1{
+        font-family: "shrikhand", cursive;
+        padding: 0.5em;
+    }
+    div{
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+        background-color: $backgroundLight-color;
+    }
+}
+.section-explore{
+    background-color: lightgrey;
+    text-align: center;
+    gap: 1em;
+    a{
+        align-self: center;
+        width: fit-content;
+        background: $gradient-color;
+        color: white;
+        padding: 1em;
+        border-radius: 1.5em;
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+    }
+}
+.section-functioning{
+    ul{
+        gap: 2em;
+        margin: 2em 0;
+        li{
+            display: flex;
+            align-items: center;
+            span{
+                background-color: $main-color;
+                color: white;
+                text-align: center;
+                padding: 0.20em 0.5em;
+                border-radius: 1em;
+                position: relative;
+                left: 0.75em;
+            }
+            .section-functioning_step{
+                background-color: $backgroundLight-color;
+                width: 100%;
+                padding: 1.5em;
+                border-radius: 1em;
+                box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);/*Shadow Function*/
+                i{
+                    margin-right: 1em;
+                    color: $backgroundDark-color;
+                }
+            }
+            .section-functioning_step:hover{
+                background-color: $secondary-color; /*change color with lighten function*/
+                i{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+.section-restaurant{
+    background-color: $backgroundLight-color;
+    .restaurantList{
+        margin: 1em 0;
+        gap: 1em;
+        .restaurantList-card{
+            width: 100%;
+            align-self: center;
+            background-color: white;
+            border-radius: 1em;
+            position: relative;
+            .restaurantList-card__img{
+                height: 70%;
+                img{
+                    height: 12em;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 1em 1em 0 0;
+                }
+                .restaurantList-card_new{
+                    background-color: $tertiary-color;
+                    color: $main-color; /*change color with darken function*/
+                    width: fit-content;
+                    height:fit-content;
+                    padding: 0.5em 1em;
+                    border-radius: 0.25em;
+                    position: absolute;
+                    left: 68%;
+                    top: 5%;
+                }
+            }
+            .restaurantList-card__txt{
+                padding: 1em;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                }
+                i{
+                    font-size: x-large;
+                }
+                i:hover{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $backgroundDark-color;
+    color: white;
+    h2{
+        font-family: "shrikhand", cursive;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+    ul{
+        gap: 0.5em;
+    }
+    a{
+        color: white;
+    }
+}
