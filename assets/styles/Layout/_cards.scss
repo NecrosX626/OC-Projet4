@@ -1,0 +1,43 @@
+.restaurantList-card{
+    width: 100%;
+    align-self: center;
+    background-color: white;
+    border-radius: 1em;
+    position: relative;
+    .restaurantList-card__img{
+        height: 70%;
+        img{
+            height: 12em;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 1em 1em 0 0;
+        }
+        .restaurantList-card_new{
+            background-color: $tertiary-color;
+            color: darken($tertiary-color, 50%);
+            width: fit-content;
+            height:fit-content;
+            padding: 0.5em 1em;
+            border-radius: 0.25em;
+            position: absolute;
+            left: 68%;
+            top: 5%;
+        }
+    }
+    .restaurantList-card__txt{
+        padding: 1em;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+        i{
+            font-size: x-large;
+        }
+        i:hover{
+            color: $main-color;
+        }
+    }
+}

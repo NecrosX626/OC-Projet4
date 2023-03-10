@@ -1,1 +1,174 @@
+/*Colors*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", cursive;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+}
+
+section, footer {
+  padding: 2.5em 1em;
+}
+
+h1 {
+  font-family: "shrikhand", cursive;
+  padding: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  margin-right: 0.5em;
+}
+
+.flexHorizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer h2 {
+  font-family: "shrikhand", cursive;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+footer ul {
+  gap: 0.5em;
+}
+footer a {
+  color: white;
+}
+
+header {
+  align-items: center;
+}
+header div {
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.section-explore {
+  background-color: #f7f7f7;
+  text-align: center;
+  gap: 1em;
+}
+
+.section-functioning ul {
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.section-restaurant {
+  background-color: #EAEAEA;
+}
+.section-restaurant .restaurantList {
+  margin: 1em 0;
+  gap: 1em;
+}
+
+.restaurantList-card {
+  width: 100%;
+  align-self: center;
+  background-color: white;
+  border-radius: 1em;
+  position: relative;
+}
+.restaurantList-card .restaurantList-card__img {
+  height: 70%;
+}
+.restaurantList-card .restaurantList-card__img img {
+  height: 12em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+.restaurantList-card .restaurantList-card__img .restaurantList-card_new {
+  background-color: #99E2D0;
+  color: #1b6150;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  position: absolute;
+  left: 68%;
+  top: 5%;
+}
+.restaurantList-card .restaurantList-card__txt {
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurantList-card .restaurantList-card__txt div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.restaurantList-card .restaurantList-card__txt i {
+  font-size: x-large;
+}
+.restaurantList-card .restaurantList-card__txt i:hover {
+  color: #9356DC;
+}
+
+.section-functioning_step {
+  display: flex;
+  align-items: center;
+}
+.section-functioning_step span {
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  position: relative;
+  left: 0.75em;
+}
+.section-functioning_step div {
+  background-color: #EAEAEA;
+  width: 100%;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25); /*Shadow Function*/
+}
+.section-functioning_step div i {
+  margin-right: 1em;
+  color: #353535;
+}
+.section-functioning_step div:hover {
+  background-color: #f2eafb;
+}
+.section-functioning_step div:hover i {
+  color: #9356DC;
+}
+
+.gradientButton {
+  align-self: center;
+  width: fit-content;
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: white;
+  padding: 1em;
+  border-radius: 1.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
+
 /*# sourceMappingURL=style.css.map */

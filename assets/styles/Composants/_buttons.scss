@@ -1,0 +1,9 @@
+.gradientButton{
+    align-self: center;
+    width: fit-content;
+    background: $gradient-color;
+    color: white;
+    padding: 1em;
+    border-radius: 1.5em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}

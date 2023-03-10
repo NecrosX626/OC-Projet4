@@ -1,5 +1,8 @@
-@import "./Utils/_variables.scss";
-@import "./Base/_fonts";
-@import "./Base/_global";
+@import "./Utils/variables";
+@import "./Utils/functions";
+@import "./Base/fonts";
+@import "./Base/global";
 @import "./Base/index";
-@import "./Layout/boxes";
+@import "./Layout/cards";
+@import "./Layout/steps";
+@import "./Composants/buttons";
