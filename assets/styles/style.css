@@ -118,7 +118,7 @@ header div {
   justify-content: space-between;
   align-items: center;
 }
-.restaurantList-card .restaurantList-card__txt div {
+.restaurantList-card .restaurantList-card__txt a {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -126,7 +126,22 @@ header div {
 .restaurantList-card .restaurantList-card__txt i {
   font-size: x-large;
 }
-.restaurantList-card .restaurantList-card__txt i:hover {
+.restaurantList-card .restaurantList-card__txt .likeIcons {
+  position: relative;
+}
+.restaurantList-card .restaurantList-card__txt .likeIcons .inactive {
+  z-index: 1;
+}
+.restaurantList-card .restaurantList-card__txt .likeIcons .active {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  color: transparent;
+}
+.restaurantList-card .restaurantList-card__txt .likeIcons .inactive:hover {
+  color: #9356DC;
+}
+.restaurantList-card .restaurantList-card__txt .likeIcons .active:hover {
   color: #9356DC;
 }
 

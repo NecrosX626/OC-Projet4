@@ -28,7 +28,7 @@
         padding: 1em;
         justify-content: space-between;
         align-items: center;
-        div{
+        a{
             display: flex;
             flex-direction: column;
             gap: 0.5em;
@@ -36,8 +36,23 @@
         i{
             font-size: x-large;
         }
-        i:hover{
-            color: $main-color;
+        .likeIcons{
+            position: relative;
+            .inactive{
+                z-index: 1;
+            }
+            .active{
+                position: absolute;
+                left: 0;
+                z-index: 0;
+                color: transparent;
+            }
+            .inactive:hover{
+                color: $main-color;
+            }
+            .active:hover{
+                color: $main-color;
+            }
         }
     }
 }
