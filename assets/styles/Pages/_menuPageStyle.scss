@@ -12,6 +12,10 @@ header {
       margin-left: 1em;
     }
   }
+  img{
+    height: 20em;
+    object-fit: cover;
+  }
 }
 .menu {
   background-color: $backgroundLight-color;
@@ -26,7 +30,7 @@ header {
     }
   }
   .menu-step {
-    margin: 1.5em 0;
+    margin-top: 1em;
     h3{
         font-weight: 100;
     }
@@ -37,14 +41,27 @@ header {
   }
 }
 
+.gradientButton{
+  align-self: center;
+  margin: 1em 0;
+  padding: 1em 3em;
+}
 
 //MOVE TO DISHES
 .menu-step__dish{
     justify-content: space-between;
-    margin: 1em;
+    margin: 1em 0;
     background-color: white;
     padding: 0.5em 1em;
     border-radius: 1em;
+    .dish-txt{
+      max-width: 90%;
+        p{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+    }
     .dish-price{
         align-self: last baseline;
     }
