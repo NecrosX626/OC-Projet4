@@ -15,6 +15,16 @@ section, footer{
 h1{
     font-family: "shrikhand", cursive;
     padding: 0.5em;
+    font-size: 30px;
+}
+h2{
+    font-size: $mobile-L;
+}
+h3{
+    font-size: $mobile-M;
+}
+p{
+    font-size: $mobile-S;
 }
 a{
     text-decoration: none;

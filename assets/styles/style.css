@@ -1,5 +1,53 @@
 /*Colors*/
+/*Fonts Sizes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@media screen and (min-width: 1440px) {
+  /*GLOBAL*/
+  body {
+    min-width: 100%;
+    margin: auto;
+  }
+  .section-functioning,
+  .section-restaurant,
+  footer {
+    padding: 2em 10em;
+  }
+  /*EXPLORE*/
+  .section-explore h2 {
+    font-size: 40px;
+  }
+  /*FUNCTIONNING*/
+  .section-functioning ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section-functioning ul .section-functioning_step {
+    width: 100%;
+  }
+  /*RESTAURANT*/
+  .section-restaurant .restaurantList {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .section-restaurant .restaurantList .restaurantList-card {
+    min-width: 22em;
+  }
+  /*FOOTER*/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5em;
+  }
+  footer h2 {
+    margin-bottom: 0 !important;
+    margin-right: 5em;
+  }
+  footer .footerContent {
+    flex-direction: row;
+    gap: 5em;
+  }
+}
 * {
   list-style-type: none;
   box-sizing: border-box;
@@ -20,6 +68,19 @@ section, footer {
 h1 {
   font-family: "shrikhand", cursive;
   padding: 0.5em;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
 }
 
 a {
