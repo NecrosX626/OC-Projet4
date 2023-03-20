@@ -2,9 +2,10 @@
 /*Fonts Sizes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @media screen and (min-width: 1440px) {
+  /*-----INDEX-----*/
   /*GLOBAL*/
-  body {
-    min-width: 100%;
+  body, .indexPage, .menuPage {
+    max-width: 1440px !important;
     margin: auto;
   }
   .section-functioning,
@@ -27,13 +28,15 @@
   /*RESTAURANT*/
   .section-restaurant .restaurantList {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 5em !important;
   }
   .section-restaurant .restaurantList .restaurantList-card {
-    min-width: 22em;
+    max-width: 45%;
   }
   /*FOOTER*/
   footer {
+    padding-right: 10em !important;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -41,12 +44,12 @@
   }
   footer h2 {
     margin-bottom: 0 !important;
-    margin-right: 5em;
   }
   footer .footerContent {
     flex-direction: row;
     gap: 5em;
   }
+  /*-----MENUS-----*/
 }
 * {
   list-style-type: none;
@@ -171,7 +174,7 @@ header div {
   padding: 0.5em 1em;
   border-radius: 0.25em;
   position: absolute;
-  left: 68%;
+  right: 3%;
   top: 5%;
 }
 .restaurantList-card .restaurantList-card__txt {

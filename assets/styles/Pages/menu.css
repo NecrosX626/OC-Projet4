@@ -1,5 +1,56 @@
 /*Colors*/
+/*Fonts Sizes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@media screen and (min-width: 1440px) {
+  /*-----INDEX-----*/
+  /*GLOBAL*/
+  body, .indexPage, .menuPage {
+    max-width: 1440px !important;
+    margin: auto;
+  }
+  .section-functioning,
+  .section-restaurant,
+  footer {
+    padding: 2em 10em;
+  }
+  /*EXPLORE*/
+  .section-explore h2 {
+    font-size: 40px;
+  }
+  /*FUNCTIONNING*/
+  .section-functioning ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section-functioning ul .section-functioning_step {
+    width: 100%;
+  }
+  /*RESTAURANT*/
+  .section-restaurant .restaurantList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5em !important;
+  }
+  .section-restaurant .restaurantList .restaurantList-card {
+    max-width: 45%;
+  }
+  /*FOOTER*/
+  footer {
+    padding-right: 10em !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5em;
+  }
+  footer h2 {
+    margin-bottom: 0 !important;
+  }
+  footer .footerContent {
+    flex-direction: row;
+    gap: 5em;
+  }
+  /*-----MENUS-----*/
+}
 * {
   list-style-type: none;
   box-sizing: border-box;
@@ -20,6 +71,19 @@ section, footer {
 h1 {
   font-family: "shrikhand", cursive;
   padding: 0.5em;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
 }
 
 a {
@@ -133,6 +197,17 @@ header img {
 }
 .menu-step__dish .dish-price {
   align-self: last baseline;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    margin: 2em 15em !important;
+    padding: 2.5em 15em;
+  }
+  .menu .title {
+    justify-content: center;
+    gap: 1em;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
