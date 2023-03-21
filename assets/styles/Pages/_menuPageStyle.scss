@@ -1,80 +1,51 @@
-h2 {
-  font-family: "shrikhand", cursive;
-}
-header {
-  div {
-    align-items: center;
-    i {
-      padding: 0.5em;
-      font-size: x-large;
-    }
-    h1 {
-      margin-left: 1em;
-    }
-  }
-  img {
-    height: 20em;
-    object-fit: cover;
-  }
-}
-.menu {
-  background-color: $backgroundLight-color;
-  border-radius: 2em;
-  position: relative;
-  bottom: 5em;
-  .title {
-    justify-content: space-between;
-    align-items: center;
-    i {
-      font-size: x-large;
-    }
-  }
-  .menu-step {
-    margin-top: 1em;
-    h3 {
-      font-weight: 100;
-    }
-    hr {
-      width: 2em;
-      color: $tertiary-color;
-    }
-  }
-}
-
-.gradientButton {
-  align-self: center;
-  margin: 1em 0;
-  padding: 1em 3em;
-}
-
-//MOVE TO DISHES
-.menu-step__dish {
-  justify-content: space-between;
-  margin: 1em 0;
-  background-color: white;
-  padding: 0.5em 1em;
-  border-radius: 1em;
-  .dish-txt {
-    max-width: 90%;
-    p {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
-  .dish-price {
-    align-self: last baseline;
-  }
-}
-
-//MOVE TO MEDIA
-@media screen and (min-width: 1440px) {
-  .menu {
-    margin: 2em 15em !important;
-    padding: 2.5em 15em;
-    .title{
+/*MENU*/
+.menuPage {
+  header {
+    div {
       justify-content: center;
-      gap: 1em;
+      i {
+        padding: 0.5em;
+        font-size: x-large;
+        position: absolute;
+        align-self: center;
+        left: 0;
+        top: 0.5em;
+      }
+    }
+    img {
+      height: 20em;
+      object-fit: cover;
+    }
+  }
+  .menu {
+    background-color: $backgroundLight-color;
+    border-radius: 2em;
+    position: relative;
+    top: -5em;
+    .title {
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-family: "shrikhand", cursive;
+      }
+      i {
+        font-size: x-large;
+      }
+    }
+    .menu-step {
+      margin-top: 1em;
+      h3 {
+        font-weight: 100;
+      }
+      hr {
+        width: 2em;
+        color: $tertiary-color;
+      }
+    }
+    .gradientButton {
+      align-self: center;
+      margin: 1em 0;
+      padding: 1em 3em;
     }
   }
 }

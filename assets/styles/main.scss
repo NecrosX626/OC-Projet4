@@ -1,9 +1,11 @@
 @import "./Utils/variables";
 @import "./Utils/functions";
-@import "./Utils/media";
 @import "./Base/fonts";
 @import "./Base/global";
-@import "./Base/index";
+@import "./Pages/index";
+@import "./Pages/menuPageStyle";
 @import "./Layout/cards";
 @import "./Layout/steps";
+@import "./Layout/dishes";
 @import "./Composants/buttons";
+@import "./Utils/media";
