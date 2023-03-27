@@ -1,58 +1,59 @@
-.restaurantList-card{
-    width: 100%;
-    align-self: center;
-    background-color: white;
-    border-radius: 1em;
-    position: relative;
-    .restaurantList-card__img{
-        height: 70%;
-        img{
-            height: 12em;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 1em 1em 0 0;
-        }
-        .restaurantList-card_new{
-            background-color: $tertiary-color;
-            color: darken($tertiary-color, 50%);
-            width: fit-content;
-            height:fit-content;
-            padding: 0.5em 1em;
-            border-radius: 0.25em;
-            position: absolute;
-            right: 3%;
-            top: 5%;
-        }
+//INDEXPAGE RESTAURANT CARDS
+.restaurantList .card {
+  width: 100%;
+  align-self: center;
+  background-color: white;
+  border-radius: 1em;
+  position: relative;
+  &__img {
+    height: 70%;
+    img {
+      height: 12em;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1em 1em 0 0;
     }
-    .restaurantList-card__txt{
-        padding: 1em;
-        justify-content: space-between;
-        align-items: center;
-        a{
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-        }
-        i{
-            font-size: x-large;
-        }
-        .likeIcons{
-            position: relative;
-            .inactive{
-                z-index: 1;
-            }
-            .active{
-                position: absolute;
-                left: 0;
-                z-index: 0;
-                color: transparent;
-            }
-            .inactive:hover{
-                color: $main-color;
-            }
-            .active:hover{
-                color: $main-color;
-            }
-        }
+  }
+  &__new {
+    background-color: $tertiary-color;
+    color: darken($tertiary-color, 50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+  }
+  &__txt {
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
     }
+    i {
+      font-size: x-large;
+    }
+    .likeIcons {
+      position: relative;
+      .inactive {
+        z-index: 1;
+      }
+      .active {
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        color: transparent;
+      }
+      .inactive:hover {
+        color: $main-color;
+      }
+      .active:hover {
+        color: $main-color;
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-/*MENU*/
+/*MENUPAGE*/
 .menuPage {
   header {
     div {
@@ -13,7 +13,7 @@
       }
     }
     img {
-      height: 20em;
+      height: 18em;
       object-fit: cover;
     }
   }
@@ -27,12 +27,13 @@
       align-items: center;
       h2 {
         font-family: "shrikhand", cursive;
+        font-weight: 400;
       }
       i {
         font-size: x-large;
       }
     }
-    .menu-step {
+    .step {
       margin-top: 1em;
       h3 {
         font-weight: 100;

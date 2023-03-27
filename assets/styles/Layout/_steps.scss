@@ -1,31 +1,31 @@
-/*FUNCTIONNING STEPS*/
-.section-functioning_step{
+//INDEXPAGE FUNCTIONNING STEPS
+.functionning .step {
     display: flex;
     align-items: center;
-    span{
-        background-color: $main-color;
-        color: white;
-        text-align: center;
-        padding: 0.20em 0.5em;
-        border-radius: 1em;
-        position: relative;
-        left: 0.75em;
+    span {
+      background-color: $main-color;
+      color: white;
+      text-align: center;
+      padding: 0.2em 0.5em;
+      border-radius: 1em;
+      position: relative;
+      left: 0.75em;
     }
-    div{
-        background-color: $backgroundLight-color;
-        width: 100%;
-        padding: 1.5em;
-        border-radius: 1em;
-        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);/*Shadow Function*/
-        i{
-            margin-right: 1em;
-            color: $backgroundDark-color;
-        }
+    div {
+      background-color: $backgroundLight-color;
+      width: 100%;
+      padding: 1.5em;
+      border-radius: 1em;
+      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25); /*Shadow Function*/
+      i {
+        margin-right: 1em;
+        color: $backgroundDark-color;
+      }
     }
-    div:hover{
-        background-color: lighten($main-color, 35%);
-        i{
-            color: $main-color;
-        }
+    div:hover {
+      background-color: lighten($main-color, 35%);
+      i {
+        color: $main-color;
+      }
     }
-}
+  }

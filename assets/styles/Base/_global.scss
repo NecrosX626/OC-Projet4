@@ -1,4 +1,4 @@
-/*GLOBAL*/
+//GLOBAL
 *{
     list-style-type: none;
     box-sizing: border-box;
@@ -17,9 +17,11 @@ h1{
     font-family: "shrikhand", cursive;
     padding: 0.5em;
     font-size: 30px;
+    font-weight: 400;
 }
 h2{
     font-size: $mobile-L;
+    font-weight: 700;
 }
 h3{
     font-size: $mobile-M;

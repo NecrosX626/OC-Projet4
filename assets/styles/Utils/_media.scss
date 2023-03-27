@@ -1,8 +1,8 @@
-/*MEDIA*/
+//MEDIA QUERIES
 @media screen and (min-width: 768px){
   /*GLOBAL*/
-  .section-functioning,
-  .section-restaurant,
+  .functionning,
+  .restaurant,
   footer {
     padding: 2em 5%;
   }
@@ -26,15 +26,15 @@
   }
   .indexPage {
     /*EXPLORE*/
-    .section-explore h2 {
+    .explore h2 {
       font-size: $desktop-L;
     }
     /*FUNCTIONNING*/
-    .section-functioning ul {
+    .functionning ul {
       flex-direction: row;
       justify-content: center;
       gap: 0.5em !important;
-      .section-functioning_step {
+      .step {
         width: 100%;
         div {
           display: flex;
@@ -44,12 +44,12 @@
       }
     }
     /*RESTAURANT*/
-    .section-restaurant {
+    .restaurant {
       .restaurantList {
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        .restaurantList-card {
+        .card {
           max-width: 48%;
         }
       }

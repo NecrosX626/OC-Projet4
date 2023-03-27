@@ -1,10 +1,11 @@
-.menu-step__dish {
+//MENU DISHES
+.menu .dish{
     justify-content: space-between;
     margin: 1em 0;
     background-color: white;
     padding: 0.5em 1em;
     border-radius: 1em;
-    .dish-txt {
+    &__txt {
       max-width: 90%;
       p {
         white-space: nowrap;
@@ -12,7 +13,7 @@
         text-overflow: ellipsis;
       }
     }
-    .dish-price {
+    &__price {
       align-self: last baseline;
     }
   }

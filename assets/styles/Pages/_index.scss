@@ -1,4 +1,4 @@
-/*INDEX*/
+/*INDEXPAGE*/
 .indexPage {
   header {
     align-items: center;
@@ -10,18 +10,18 @@
       background-color: $backgroundLight-color;
     }
   }
-  .section-explore {
+  .explore {
     background-color: lighten($backgroundLight-color, 5%);
     text-align: center;
     gap: 1em;
   }
-  .section-functioning {
+  .functionning {
     ul {
       gap: 2em;
       margin: 2em 0;
     }
   }
-  .section-restaurant {
+  .restaurant {
     background-color: $backgroundLight-color;
     .restaurantList {
       margin: 1em 0;
