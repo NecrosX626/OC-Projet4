@@ -10,17 +10,18 @@
     justify-content: space-between;
     min-width: 100%;
     transition: min-width 0.5s;
-    &:hover, &:active{
+    &:hover,
+    &:active {
       min-width: 85%;
     }
   }
-  &__txt{
+  &__txt {
     justify-content: space-between;
     max-width: 90%;
-    p{
+    p {
       white-space: nowrap;
       overflow: hidden;
-      text-overflow:ellipsis;
+      text-overflow: ellipsis;
     }
   }
   &__price {
