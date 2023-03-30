@@ -37,16 +37,15 @@
       margin-top: 1em;
       h3 {
         font-weight: 100;
+        text-transform: uppercase;
       }
       hr {
         width: 2em;
         color: $tertiary-color;
       }
     }
-    .gradientButton {
-      align-self: center;
-      margin: 1em 0;
-      padding: 1em 3em;
+    .gradientButton{
+      padding:  1em 3em; 
     }
   }
 }

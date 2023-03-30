@@ -170,14 +170,13 @@ footer a {
 }
 .menuPage .menu .step h3 {
   font-weight: 100;
+  text-transform: uppercase;
 }
 .menuPage .menu .step hr {
   width: 2em;
   color: #99E2D0;
 }
 .menuPage .menu .gradientButton {
-  align-self: center;
-  margin: 1em 0;
   padding: 1em 3em;
 }
 
@@ -221,25 +220,6 @@ footer a {
 .restaurantList .card__txt i {
   font-size: x-large;
 }
-.restaurantList .card__txt .likeIcons {
-  position: relative;
-}
-.restaurantList .card__txt .likeIcons .fullHeart {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.restaurantList .card__txt .likeIcons .emptyHeart {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: white;
-  transition: color 0.25s, background-color 0.25s;
-}
-.restaurantList .card__txt .likeIcons .emptyHeart:hover {
-  color: transparent;
-  background-color: transparent;
-}
 
 .functionning .step {
   display: flex;
@@ -272,23 +252,70 @@ footer a {
   color: #9356DC;
 }
 
-.menu .dish {
-  justify-content: space-between;
-  margin: 1em 0;
+.dish {
   background-color: white;
-  padding: 0.5em 1em;
+  margin: 1em 0;
   border-radius: 1em;
+  height: 4em;
+  overflow: hidden;
 }
-.menu .dish__txt {
+.dish__infos {
+  padding: 0.5em 1em;
+  justify-content: space-between;
+  min-width: 100%;
+  transition: min-width 0.5s;
+}
+.dish__infos:hover, .dish__infos:active {
+  min-width: 85%;
+}
+.dish__txt {
+  justify-content: space-between;
   max-width: 90%;
 }
-.menu .dish__txt p {
+.dish__txt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .dish__price {
+.dish__price {
   align-self: last baseline;
+}
+.dish__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  background: #99E2D0;
+  color: white;
+  width: 15%;
+}
+.dish__check i {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.likeIcons {
+  position: relative;
+}
+.likeIcons .fullHeart {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.likeIcons .emptyHeart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  transition: color 0.25s, background-color 0.25s;
+}
+.likeIcons .emptyHeart:hover, .likeIcons .emptyHeart:active {
+  color: transparent;
+  background-color: transparent;
+}
+
+.menuPage .emptyHeart {
+  background-color: #EAEAEA;
 }
 
 .gradientButton {
@@ -297,12 +324,13 @@ footer a {
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
   color: white;
+  margin: 1em 0;
   padding: 1em;
   border-radius: 1.5em;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
   transition: opacity 0.5s, box-shadow 0.5s;
 }
-.gradientButton:hover {
+.gradientButton:hover, .gradientButton:active {
   opacity: 0.8;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }

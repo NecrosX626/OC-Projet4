@@ -1,19 +1,42 @@
 //MENU DISHES
-.menu .dish{
-    justify-content: space-between;
-    margin: 1em 0;
-    background-color: white;
+.dish {
+  background-color: white;
+  margin: 1em 0;
+  border-radius: 1em;
+  height: 4em;
+  overflow: hidden;
+  &__infos {
     padding: 0.5em 1em;
-    border-radius: 1em;
-    &__txt {
-      max-width: 90%;
-      p {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-    &__price {
-      align-self: last baseline;
+    justify-content: space-between;
+    min-width: 100%;
+    transition: min-width 0.5s;
+    &:hover, &:active{
+      min-width: 85%;
     }
   }
+  &__txt{
+    justify-content: space-between;
+    max-width: 90%;
+    p{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+  }
+  &__price {
+    align-self: last baseline;
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    background: $tertiary-color;
+    color: white;
+    width: 15%;
+    i {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+}
