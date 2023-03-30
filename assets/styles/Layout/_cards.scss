@@ -39,21 +39,23 @@
     }
     .likeIcons {
       position: relative;
-      .inactive {
-        z-index: 1;
+      .fullHeart {
+        background-image: $gradient-color;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-      .active {
+      .emptyHeart{
         position: absolute;
         left: 0;
-        z-index: 0;
-        color: transparent;
+        top: 0;
+        background-color: white;
+        transition: color 0.25s, background-color 0.25s;
+        &:hover{
+          color: transparent;
+          background-color: transparent;
+        }
       }
-      .inactive:hover {
-        color: $main-color;
-      }
-      .active:hover {
-        color: $main-color;
-      }
+
     }
   }
 }

@@ -1,0 +1,31 @@
+/*ANIMATIONS*/
+//Loader
+@keyframes loaderSpin{
+    0%{
+        transform: rotate(0deg);
+        border-left: 0.25em solid $main-color;
+    }
+    50%{
+        border-left: 0.25em solid $secondary-color;
+    }
+    100%{
+        border-left: 0.25em solid $main-color;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loaderDisplay{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    99%{
+        z-index: 10;
+    }
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }
+}

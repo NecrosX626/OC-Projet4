@@ -1,5 +1,6 @@
 @import "./Utils/variables";
 @import "./Utils/functions";
+@import "./Utils/animations";
 @import "./Base/fonts";
 @import "./Base/global";
 @import "./Pages/index";
@@ -8,4 +9,5 @@
 @import "./Layout/steps";
 @import "./Layout/dishes";
 @import "./Composants/buttons";
+@import "./Composants/loader";
 @import "./Utils/media";

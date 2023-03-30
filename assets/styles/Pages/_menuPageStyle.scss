@@ -1,5 +1,9 @@
 /*MENUPAGE*/
 .menuPage {
+  h2 {
+    font-family: "shrikhand", cursive;
+    font-weight: 400;
+  }
   header {
     div {
       justify-content: center;
@@ -25,10 +29,6 @@
     .title {
       justify-content: space-between;
       align-items: center;
-      h2 {
-        font-family: "shrikhand", cursive;
-        font-weight: 400;
-      }
       i {
         font-size: x-large;
       }
