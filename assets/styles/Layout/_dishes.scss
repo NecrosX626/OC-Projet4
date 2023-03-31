@@ -10,10 +10,6 @@
     justify-content: space-between;
     min-width: 100%;
     transition: min-width 0.5s;
-    &:hover,
-    &:active {
-      min-width: 85%;
-    }
   }
   &__txt {
     justify-content: space-between;
@@ -39,5 +35,11 @@
       font-size: 1.5em;
       margin: 0;
     }
+  }
+  &:hover > .dish__infos{
+    min-width: 95%;
+  }
+  &:active > .dish__infos{
+    min-width: 85%;
   }
 }

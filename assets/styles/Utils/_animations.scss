@@ -28,18 +28,18 @@
     z-index: -10;
   }
 }
-//Menu Dish Display
+//Menu Dish Displayo
 .starter {
   transform: translateX(-150%);
-  animation: dishSlide 1s 2.25s forwards;
+  animation: dishSlide 1s 0s forwards;
 }
 .mainCourse {
   transform: translateX(-150%);
-  animation: dishSlide 1s 2.5s forwards;
+  animation: dishSlide 1s 0.25s forwards;
 }
 .dessert {
   transform: translateX(-150%);
-  animation: dishSlide 1s 2.75s forwards;
+  animation: dishSlide 1s 0.5s forwards;
 }
 
 @keyframes dishSlide {
