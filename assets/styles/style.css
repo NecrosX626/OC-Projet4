@@ -314,7 +314,7 @@ footer a {
   margin: 0;
 }
 .dish:hover > .dish__infos {
-  min-width: 95%;
+  min-width: 100%;
 }
 .dish:active > .dish__infos {
   min-width: 85%;
@@ -326,6 +326,7 @@ footer a {
 .likeIcons .fullHeart {
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .likeIcons .emptyHeart {
@@ -336,8 +337,9 @@ footer a {
   transition: color 0.25s, background-color 0.25s;
 }
 .likeIcons .emptyHeart:hover, .likeIcons .emptyHeart:active {
-  color: transparent;
   background-color: transparent;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .menuPage .emptyHeart {
@@ -390,6 +392,7 @@ footer a {
   position: absolute;
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -458,6 +461,12 @@ footer a {
   .menuPage .menu .title {
     justify-content: center;
     gap: 1em;
+  }
+  .menuPage .menu .dish:hover > .dish__infos {
+    min-width: 95%;
+  }
+  .menuPage .menu .dish:active > .dish__infos {
+    min-width: 100%;
   }
 }
 
