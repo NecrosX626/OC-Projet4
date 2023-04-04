@@ -19,13 +19,13 @@
     img {
       height: 18em;
       object-fit: cover;
+      z-index: -1;
     }
+    margin-bottom: -3em;
   }
   .menu {
     background-color: $backgroundLight-color;
-    border-radius: 2em;
-    position: relative;
-    top: -5em;
+    border-radius: 2em 2em 0 0;
     .title {
       justify-content: space-between;
       align-items: center;

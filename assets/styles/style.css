@@ -160,6 +160,9 @@ footer a {
   font-family: "shrikhand", cursive;
   font-weight: 400;
 }
+.menuPage header {
+  margin-bottom: -3em;
+}
 .menuPage header div {
   justify-content: center;
 }
@@ -174,12 +177,11 @@ footer a {
 .menuPage header img {
   height: 18em;
   object-fit: cover;
+  z-index: -1;
 }
 .menuPage .menu {
   background-color: #EAEAEA;
-  border-radius: 2em;
-  position: relative;
-  top: -5em;
+  border-radius: 2em 2em 0 0;
 }
 .menuPage .menu .title {
   justify-content: space-between;
@@ -452,6 +454,9 @@ footer a {
   }
   .menuPage header div i {
     margin-left: 1em;
+  }
+  .menuPage header img {
+    height: 30em;
   }
   .menuPage .menu {
     width: 75%;

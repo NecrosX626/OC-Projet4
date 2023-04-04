@@ -56,8 +56,13 @@
     }
   }
   .menuPage {
-    header div i {
-      margin-left: 1em;
+    header {
+      div i {
+        margin-left: 1em;
+      }
+      img{
+        height: 30em;
+      }
     }
     .menu {
       width: 75%;
