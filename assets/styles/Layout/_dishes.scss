@@ -14,7 +14,7 @@
   &__txt {
     justify-content: space-between;
     max-width: 90%;
-    p {
+    h4, p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -37,9 +37,6 @@
     }
   }
   &:hover > .dish__infos{
-    min-width: 100%;
-  }
-  &:active > .dish__infos{
     min-width: 85%;
   }
 }

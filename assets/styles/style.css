@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*Colors*/
 /*Fonts Sizes*/
-/*ANIMATIONS*/
+/*Loader*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @keyframes loaderSpin {
   0% {
@@ -12,8 +11,8 @@
     border-left: 0.25em solid #FF79DA;
   }
   100% {
-    border-left: 0.25em solid #9356DC;
     transform: rotate(360deg);
+    border-left: 0.25em solid #9356DC;
   }
 }
 @keyframes loaderDisplay {
@@ -31,6 +30,7 @@
     z-index: -10;
   }
 }
+/*Menu Dish Display*/
 .starter {
   transform: translateX(-150%);
   animation: dishSlide 1s 0s forwards;
@@ -171,7 +171,7 @@ footer a {
   font-size: x-large;
   position: absolute;
   align-self: center;
-  left: 0;
+  left: 0.5em;
   top: 0.5em;
 }
 .menuPage header img {
@@ -198,7 +198,7 @@ footer a {
   text-transform: uppercase;
 }
 .menuPage .menu .step hr {
-  width: 2em;
+  width: 3em;
   color: #99E2D0;
 }
 .menuPage .menu .gradientButton {
@@ -207,7 +207,6 @@ footer a {
 
 .restaurantList .card {
   width: 100%;
-  align-self: center;
   background-color: white;
   border-radius: 1em;
   position: relative;
@@ -224,8 +223,6 @@ footer a {
 .restaurantList .card__new {
   background-color: #99E2D0;
   color: #1b6150;
-  width: fit-content;
-  height: fit-content;
   padding: 0.5em 1em;
   border-radius: 0.25em;
   position: absolute;
@@ -256,24 +253,24 @@ footer a {
   text-align: center;
   padding: 0.2em 0.5em;
   border-radius: 1em;
-  position: relative;
-  left: 0.75em;
+  margin-right: -0.75em;
+  z-index: 1;
 }
 .functionning .step div {
   background-color: #EAEAEA;
   width: 100%;
   padding: 1.5em;
   border-radius: 1em;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25); /*Shadow Function*/
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
 }
 .functionning .step div i {
   margin-right: 1em;
   color: #353535;
 }
-.functionning .step div:hover, .functionning .step div:active {
+.functionning .step div:hover {
   background-color: #f2eafb;
 }
-.functionning .step div:hover i, .functionning .step div:active i {
+.functionning .step div:hover i {
   color: #9356DC;
 }
 
@@ -294,7 +291,7 @@ footer a {
   justify-content: space-between;
   max-width: 90%;
 }
-.dish__txt p {
+.dish__txt h4, .dish__txt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -316,9 +313,6 @@ footer a {
   margin: 0;
 }
 .dish:hover > .dish__infos {
-  min-width: 100%;
-}
-.dish:active > .dish__infos {
   min-width: 85%;
 }
 
@@ -336,12 +330,11 @@ footer a {
   left: 0;
   top: 0;
   background-color: white;
-  transition: color 0.25s, background-color 0.25s;
+  transition: color 0.5s, background-color 0.5s;
 }
-.likeIcons .emptyHeart:hover, .likeIcons .emptyHeart:active {
+.likeIcons .emptyHeart:hover {
   background-color: transparent;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .menuPage .emptyHeart {
@@ -350,7 +343,6 @@ footer a {
 
 .gradientButton {
   align-self: center;
-  width: fit-content;
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
   color: white;
@@ -360,12 +352,11 @@ footer a {
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
   transition: opacity 0.5s, box-shadow 0.5s;
 }
-.gradientButton:hover, .gradientButton:active {
+.gradientButton:hover {
   opacity: 0.8;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 
-/*Pas de transition entre les dégradés. --> Bricolage avec l'opacité*/
 .loader {
   opacity: 1;
   position: fixed;
@@ -373,7 +364,7 @@ footer a {
   height: 100%;
   top: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.466);
+  background: rgba(0, 0, 0, 0.5);
   font-size: 50px;
   justify-content: center;
   align-items: center;
@@ -412,7 +403,7 @@ footer a {
     gap: 3em;
   }
   footer h2 {
-    margin-bottom: 0;
+    margin-bottom: unset;
   }
   footer .footerContent {
     flex-direction: row;
@@ -434,7 +425,6 @@ footer a {
   .indexPage .functionning ul {
     flex-direction: row;
     justify-content: center;
-    gap: 0.5em !important;
   }
   .indexPage .functionning ul .step {
     width: 100%;
@@ -442,7 +432,6 @@ footer a {
   .indexPage .functionning ul .step div {
     display: flex;
     align-items: center;
-    /*Les elements changent de taille en décalé*/
   }
   .indexPage .restaurant .restaurantList {
     justify-content: space-between;
@@ -451,9 +440,6 @@ footer a {
   }
   .indexPage .restaurant .restaurantList .card {
     max-width: 48%;
-  }
-  .menuPage header div i {
-    margin-left: 1em;
   }
   .menuPage header img {
     height: 30em;
@@ -469,9 +455,6 @@ footer a {
   }
   .menuPage .menu .dish:hover > .dish__infos {
     min-width: 95%;
-  }
-  .menuPage .menu .dish:active > .dish__infos {
-    min-width: 100%;
   }
 }
 

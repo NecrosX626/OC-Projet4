@@ -12,7 +12,7 @@
     align-items: center;
     gap: 3em;
     h2 {
-      margin-bottom: 0;
+      margin-bottom: unset;
     }
     .footerContent {
       flex-direction: row;
@@ -33,13 +33,11 @@
     .functionning ul {
       flex-direction: row;
       justify-content: center;
-      gap: 0.5em !important;
       .step {
         width: 100%;
         div {
           display: flex;
           align-items: center;
-          /*Les elements changent de taille en décalé*/
         }
       }
     }
@@ -57,9 +55,6 @@
   }
   .menuPage {
     header {
-      div i {
-        margin-left: 1em;
-      }
       img{
         height: 30em;
       }
@@ -74,9 +69,6 @@
       }
       .dish:hover > .dish__infos{
         min-width: 95%;
-      }
-      .dish:active > .dish__infos{
-        min-width: 100%;
       }
     }
   }

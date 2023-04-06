@@ -12,7 +12,7 @@
         font-size: x-large;
         position: absolute;
         align-self: center;
-        left: 0;
+        left: 0.5em;
         top: 0.5em;
       }
     }
@@ -40,7 +40,7 @@
         text-transform: uppercase;
       }
       hr {
-        width: 2em;
+        width: 3em;
         color: $tertiary-color;
       }
     }

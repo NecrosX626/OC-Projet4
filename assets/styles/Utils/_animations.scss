@@ -1,5 +1,5 @@
-/*ANIMATIONS*/
-//Loader
+//ANIMATIONS
+/*Loader*/
 @keyframes loaderSpin {
   0% {
     transform: rotate(0deg);
@@ -9,8 +9,8 @@
     border-left: 0.25em solid $secondary-color;
   }
   100% {
-    border-left: 0.25em solid $main-color;
     transform: rotate(360deg);
+    border-left: 0.25em solid $main-color;
   }
 }
 @keyframes loaderDisplay {
@@ -28,7 +28,7 @@
     z-index: -10;
   }
 }
-//Menu Dish Display
+/*Menu Dish Display*/
 .starter {
   transform: translateX(-150%);
   animation: dishSlide 1s 0s forwards;

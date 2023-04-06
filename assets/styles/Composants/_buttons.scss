@@ -1,7 +1,6 @@
 //BUTTONS
 .gradientButton{
     align-self: center;
-    width: fit-content;
     background: $gradient-color;
     opacity: 1;
     color: white;
@@ -10,9 +9,8 @@
     border-radius: 1.5em;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
     transition: opacity 0.5s, box-shadow 0.5s;
-    &:hover,&:active{
+    &:hover{
         opacity: 0.8;
         box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
     }
 }
-/*Pas de transition entre les dégradés. --> Bricolage avec l'opacité*/

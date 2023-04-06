@@ -1,7 +1,6 @@
 //INDEXPAGE RESTAURANT CARDS
 .restaurantList .card {
   width: 100%;
-  align-self: center;
   background-color: white;
   border-radius: 1em;
   position: relative;
@@ -17,8 +16,8 @@
   &__new {
     background-color: $tertiary-color;
     color: darken($tertiary-color, 50%);
-    width: fit-content;
-    height: fit-content;
+    // width: fit-content;
+    // height: fit-content;
     padding: 0.5em 1em;
     border-radius: 0.25em;
     position: absolute;
