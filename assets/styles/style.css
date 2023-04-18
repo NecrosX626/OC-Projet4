@@ -69,17 +69,16 @@ body {
 }
 
 section, footer {
-  padding: 2.5em 1em;
+  padding: 2em 1em;
 }
 
-h1 {
-  font-family: "shrikhand", cursive;
-  padding: 0.5em;
-  font-size: 30px;
-  font-weight: 400;
+.logo {
+  width: 200px;
+  height: auto;
+  padding: 1em;
 }
 
-h2 {
+h1, h2 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -116,6 +115,7 @@ footer {
   color: white;
 }
 footer h2 {
+  font-size: 18px;
   font-family: "shrikhand", cursive;
   font-weight: 400;
   margin-bottom: 1em;
@@ -156,10 +156,6 @@ footer a {
 }
 
 /*MENUPAGE*/
-.menuPage h2 {
-  font-family: "shrikhand", cursive;
-  font-weight: 400;
-}
 .menuPage header {
   margin-bottom: -3em;
 }
@@ -172,7 +168,11 @@ footer a {
   position: absolute;
   align-self: center;
   left: 0.5em;
-  top: 0.5em;
+  top: 0.25em;
+}
+.menuPage header div .logo {
+  width: 200px;
+  height: auto;
 }
 .menuPage header img {
   height: 18em;
@@ -187,19 +187,27 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
+.menuPage .menu .title h1 {
+  font-family: "shrikhand", cursive;
+  font-weight: 400;
+}
 .menuPage .menu .title i {
   font-size: x-large;
 }
 .menuPage .menu .step {
   margin-top: 1em;
 }
-.menuPage .menu .step h3 {
+.menuPage .menu .step h2 {
+  font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
 }
 .menuPage .menu .step hr {
   width: 3em;
   color: #99E2D0;
+}
+.menuPage .menu .step h3 {
+  font-size: 16px;
 }
 .menuPage .menu .gradientButton {
   padding: 1em 3em;
@@ -291,7 +299,7 @@ footer a {
   justify-content: space-between;
   max-width: 90%;
 }
-.dish__txt h4, .dish__txt p {
+.dish__txt h3, .dish__txt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

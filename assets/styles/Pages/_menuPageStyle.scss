@@ -1,9 +1,5 @@
 /*MENUPAGE*/
 .menuPage {
-  h2 {
-    font-family: "shrikhand", cursive;
-    font-weight: 400;
-  }
   header {
     div {
       justify-content: center;
@@ -13,7 +9,11 @@
         position: absolute;
         align-self: center;
         left: 0.5em;
-        top: 0.5em;
+        top: 0.25em;
+      }
+      .logo{
+        width: 200px;
+        height: auto;
       }
     }
     img {
@@ -29,19 +29,27 @@
     .title {
       justify-content: space-between;
       align-items: center;
+      h1 {
+        font-family: "shrikhand", cursive;
+        font-weight: 400;
+      }
       i {
         font-size: x-large;
       }
     }
     .step {
       margin-top: 1em;
-      h3 {
+      h2 {
+        font-size: $mobile-M;
         font-weight: 100;
         text-transform: uppercase;
       }
       hr {
         width: 3em;
         color: $tertiary-color;
+      }
+      h3{
+        font-size: $mobile-S;
       }
     }
     .gradientButton{
